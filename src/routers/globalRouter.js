@@ -3,9 +3,8 @@ import globalController from "../controllers/globalController";
 
 const globalRouter = express.Router();
 
-globalRouter.get("/", globalController);
-globalRouter.get("/list", globalController);
+globalRouter.get("/", globalController.initController);
+globalRouter.get("/list", globalController.listController);
 
 export default globalRouter;
-
 // router => 이정표
