@@ -1,15 +1,15 @@
 const initController = (req, res) => {
-  res.render("/screens/init");
+  res.render("screens/init");
 };
 
 const listController = (req, res) => {
-  res.render("/screens/list");
+  res.render("screens/list");
 };
 
-// globalRouter 라는 애를 만듬
-const globalRouter = {
+// globalController 라는 애를 만듬
+const globalController = {
   initController,
   listController,
 };
 
-export default globalRouter;
+export default globalController;
