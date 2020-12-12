@@ -11,6 +11,8 @@ app.set("view engine", "pug");
 
 app.use(morgan(`dev`));
 
+app.get("/");
+
 app.listen(PORT, () => {
   console.log(`✅  ${PORT} Server Start`);
 });
